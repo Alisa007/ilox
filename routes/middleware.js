@@ -53,6 +53,9 @@ exports.initLocals = function(req, res, next) {
 		}
 	];
 	
+	locals.style = '//rawgit.com/Alisa007/ilox/master/public/styles/';
+	locals.script = '//rawgit.com/Alisa007/ilox/master/public/js/';
+	
 	locals.user = req.user;
 
 	locals.moment = require('moment');

@@ -31,7 +31,7 @@ html
 		<link href='https://fonts.googleapis.com/css?family=Pinyon+Script|Arizonia' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Pinyon+Script|Arizonia' rel='stylesheet' type='text/css'>
 		link(href='https://rawgit.com/mblode/burger/master/dist/css/burger.min.css', rel="stylesheet")
-		link(href='/styles/main.css', rel="stylesheet")
+		link(href='#{style}main.css', rel="stylesheet")
 		
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
 		//link(href="/styles/site.css", rel="stylesheet")
@@ -52,6 +52,19 @@ html
 		
 		block meta
 			
+		style.
+			.m-t-4 {
+				margin-top: 4rem;
+			}
+
+			.m-t-5 {
+				margin-top: 5rem;
+			}
+			
+			.btn-inverse {
+				background: transparent;
+				/*color: white !important;*/
+			}
 
 	//- HTML BODY
 	body
@@ -119,7 +132,7 @@ html
 			//</ul>
 
 		//- BODY
-		#body.canvas
+		#body
 			
 			
 			//- Flash messages allow you to display once-off status messages to users, e.g. form
@@ -144,7 +157,7 @@ html
 		//script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.js')
 		
-		script(src='/js/main.js')
+		script(src='#{script}main.js')
 			
 		//script(src="//rawgit.com/mblode/burger/master/dist/scripts/burger.min.js")
 

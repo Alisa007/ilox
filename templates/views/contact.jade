@@ -1,69 +1,47 @@
 extends ../layouts/default
 
+block css
+	link(href='https://rawgit.com/kni-labs/rrssb/master/css/rrssb.css', rel="stylesheet")
+	
 block js
-	script(src='/js/contact.js')
+	script(src='https://rawgit.com/kni-labs/rrssb/master/js/rrssb.min.js')
 		
 block content
 	#fullpage
+		.section.container
+			h1.m-b-2.strike-title Contact
 		
-		.section.container-fluid
-			ul(style="position: absolute; bottom: 10px; left: 10px; width: 93% !important;").rrssb-buttons.btn-group
-				li.rrssb-email
-					a(href="mailto:?subject=Check%20out%20how%20ridiculously%20responsive%20these%20social%20buttons%20are&amp;body=http%3A%2F%2Fkurtnoble.com%2Flabs%2Frrssb%2Findex.html")
-						span.rrssb-icon
-							svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28")
-								path(d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z")
-						span.rrssb-text email
-						li.rrssb-facebook
-					a.popup(href="https://www.facebook.com/sharer/sharer.php?u=/blog/post/" + data.post.slug)
-						span.rrssb-icon
-							svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29")
-								path(d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z")
-						span.rrssb-text facebook
-						li.rrssb-twitter
-					a.popup(href="https://twitter.com/intent/tweet?text=Ridiculously%20Responsive%20Social%20Sharing%20Buttons%20by%20%40dbox%20and%20%40joshuatuscan%3A%20http%3A%2F%2Fkurtnoble.com%2Flabs%2Frrssb%20%7C%20http%3A%2F%2Fkurtnoble.com%2Flabs%2Frrssb%2Fmedia%2Frrssb-preview.png")
-						span.rrssb-icon
-							svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28")
-								path(d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62a15.093 15.093 0 0 1-8.86-2.32c2.702.18 5.375-.648 7.507-2.32a5.417 5.417 0 0 1-4.49-3.64c.802.13 1.62.077 2.4-.154a5.416 5.416 0 0 1-4.412-5.11 5.43 5.43 0 0 0 2.168.387A5.416 5.416 0 0 1 2.89 4.498a15.09 15.09 0 0 0 10.913 5.573 5.185 5.185 0 0 1 3.434-6.48 5.18 5.18 0 0 1 5.546 1.682 9.076 9.076 0 0 0 3.33-1.317 5.038 5.038 0 0 1-2.4 2.942 9.068 9.068 0 0 0 3.02-.85 5.05 5.05 0 0 1-2.48 2.71z")
-						span.rrssb-text twitter
-						
-			.col-xs-12: .m-b-2.m-x-2: h1.strike-title Contact us
 			.row
-				.col-sm-6.card-deck
-					address.card.card-border
-						h2.card-title Kuala Lumpur
-						.card-block
-							ul.fa-ul
-								li 
-									i.fa-li.lnr.lnr-map-marker
-									span(itemprop="address" 
-									itemscope itemtype="http://schema.org/PostalAddress")
-									span(itemprop="streetAddress") 20 Ampang Hilir, Jalan Mengkuang 
-									span(itemprop="addressLocality") Kuala Lumpur 
-									span(itemprop="postalCode") 55000 
-									span(itemprop="addressCountry") Malaysia [10-minute drive from Suria KLCC].
-								li 
-									i.fa-li.lnr.lnr-phone-handset
-									span +603 4265 7386
-				
-						.card-img-bottom.embed-responsive.embed-responsive-16by9
-							iframe.card-img-top(allowfullscreen
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.758875226412!2d101.7415772146012!3d3.1581479977004534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37ae5569ab35%3A0x9e5521091ceb178!2siLox+Studio!5e0!3m2!1sen!2s!4v1444464268264")
-	
-				.col-sm-6.hidden-sm-down
-					.row: .col-xs-12
+				.col-xs-10.col-xs-offset-1.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-0.hidden-sm-down
+					include ../includes/address
+					
+				.col-xs-10.col-xs-offset-1.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-0
+					.row.m-r-1: .col-xs-12
+						ul.rrssb-buttons.btn-group
+							each social in socials
+								li
+									a(href=social.url
+									role="button"
+									type="button"
+									target="_blank"
+									rel="nofollow"
+									itemprop="sameAs"
+									class="btn-#{ social.network }" style="padding: 5px 10px").btn.btn-inverse
+										i.fa(class="fa-#{ social.network }")
+									
+					.row.m-t-1.m-r-2: .col-xs-12
 						if enquirySubmitted
 							.card.card-inverse.card-success.card-block
 								p.card-text Thanks for getting in touch. iLox Studio will contact you as soon
 						else
-							form(method='post').m-r-2
+							form(method='post').hidden-sm-down
 								input(type='hidden', name='action', value='contact')
 								.row
-									.col-sm-6.form-group(class=validationErrors.name ? 'has-error' : null)
+									.col-xs-6.form-group(class=validationErrors.name ? 'has-error' : null)
 										label.sr-only Name
 										input(type='text', name='name.full', placeholder="Name", value=formData['name.full']).form-control
 		
-									.col-sm-6.form-group(class=validationErrors.email ? 'has-error' : null)
+									.col-xs-6.form-group(class=validationErrors.email ? 'has-error' : null)
 										label.sr-only Email
 										input(type='email', name='email', placeholder="Email", value=formData.email).form-control
 								.form-group(class=validationErrors.message ? 'has-error' : null)
@@ -71,92 +49,21 @@ block content
 									textarea(name='message', placeholder='Leave us a message...' rows=4).form-control= formData.message
 								.form-actions
 									button(type='submit').btn.btn-primary.btn-block Send
-								small.text-muted.pull-xs-right Or email us at: 
-									a(itemprop="email", href='mailto:mail@iloxstudio.com') mail@iloxstudio.com
-								
-					.row: .col-xs-12
-						.btn-group.btn-group-justified(role="group")
-							each social in socials
-								//.btn-group(role="group")
-								a(target="_blank"
-								rel="nofollow"
-								role="button"
-								type="button"
-								href=social.url
-								itemprop="sameAs"
-								class="btn-#{ social.network }").btn.btn-sm.btn-social-icon
-									i.fa(class="fa-#{ social.network }")
-						
-					.text-xs-center
-						each social in socials
-							a(target="_blank"
-							rel="nofollow"
-							role="button"
-							type="button"
-							href=social.url
-							itemprop="sameAs"
-							class="btn-#{ social.network }").btn.btn-sm.btn-social-icon
-								i.fa(class="fa-#{ social.network }")
-					
-					.m-t-3.text-xs-center
-						a.h2.text-xs-center(itemprop="telephone", href="tel:+6-012-218-5583", target="_blank", rel="nofollow") +60 12 218 5583
+							small.text-muted.pull-xs-right Or email us at: 
+								a(itemprop="email", href='mailto:mail@iloxstudio.com') mail@iloxstudio.com
+									
+									
+					.m-t-2.text-xs-center
+						a.text-xs-center(itemprop="telephone", href="tel:+6-012-218-5583", target="_blank", rel="nofollow"): h3 +60 12 218 5583
 							a(href="whatsapp://send?text=Hello", target="_blank",
 							rel="nofollow",
 							role="button",
 							type="button",
 							itemprop="sameAs").btn.btn-link.btn-whatsapp
 								i.fa.fa-whatsapp
-			
-			//.col-xs-12
-			//	.card.embed-responsive.embed-responsive-16by9
-			//		iframe.card-img-top(allowfullscreen
-			//		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.758875226412!2d101.7415772146012!3d3.1581479977004534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37ae5569ab35%3A0x9e5521091ceb178!2siLox+Studio!5e0!3m2!1sen!2s!4v1444464268264")
-			//
+								
+								
 		.section.container.hidden-md-up
-			.text-xs-center
-				each social in socials
-					a(target="_blank"
-					rel="nofollow"
-					role="button"
-					type="button"
-					href=social.url
-					itemprop="sameAs"
-					class="btn-#{ social.network }").btn.btn-sm.btn-social-icon.btn-circle
-						i.fa(class="fa-#{ social.network }")
-						
-			.m-t-1
-				if enquirySubmitted
-					.card.card-inverse.card-success.card-block
-						p.card-text Thanks for getting in touch. iLox Studio will contact you as soon
-				else
-					form(method='post')
-						input(type='hidden', name='action', value='contact')
-						
-						.row 
-							.col-sm-6.form-group(class=validationErrors.name ? 'has-error' : null)
-								label.sr-only Name
-								input(type='text', name='name.full', placeholder="Name", value=formData['name.full']).form-control
-									
-							.col-sm-6.form-group(class=validationErrors.email ? 'has-error' : null)
-								label.sr-only Email
-								input(type='email', name='email', placeholder="Email", value=formData.email).form-control
-						.form-group(class=validationErrors.message ? 'has-error' : null)
-							label.sr-only Message
-							textarea(name='message', placeholder='Leave us a message...' rows=4).form-control= formData.message
-						.form-actions
-							button(type='submit').btn.btn-primary.btn-block Send
-						small.text-muted.pull-xs-right Or email us at: 
-							a(itemprop="email", href='mailto:mail@iloxstudio.com') mail@iloxstudio.com
-
-//.card-deck
-//	address.card.card-border
-//		h2.card-title Jakarta
-//		.card-block
-//			p.card-text(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
-//				Batavia Tower, Jalan KH Mas Mansyur Kav 126, Central Jakarta, 10220, Jakarta, Indonesia
-//.card-deck.m-t-3
-//	address.card.card-border
-//		h2.card-title Medan
-//		.card-block
-//			p.card-text(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
-//				Centre Point Mall Business Park block G No 8 & 9, Jalan Timor, 20231, Medan, Indonesia
+			.row
+				.col-xs-10.col-xs-offset-1.col-sm-8.col-sm-offset-2
+					include ../includes/address

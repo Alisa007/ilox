@@ -3,8 +3,6 @@
  */
 
 $(document).ready(function(){
-	$('#fullpage').fullpage();
-	
 	$('.gallery').flickity({
 		accessibility: true,
 
@@ -59,8 +57,4 @@ $(document).ready(function(){
 		wrapAround: true
 		// at end of cells, wraps-around to first for infinite scrolling
 	});
-});
-
-$(document).on('click', '#moveDown', function(){
-	$.fn.fullpage.moveSectionDown();
 });

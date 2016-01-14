@@ -137,8 +137,13 @@ body {
 	font-size: 14px;
 }
 
-.nav.navbar {
-	background: #e43244;
+.nav.navbar,
+.btn-primary {
+	background: #e43244 !important;
+}
+
+a {
+	color: #e43244 !important;
 }
 
 #loader .logo {

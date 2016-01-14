@@ -142,8 +142,9 @@ body {
 	background: #e43244 !important;
 }
 
-a {
-	color: #e43244 !important;
+a,
+a:hover {
+	color: #e43244;
 }
 
 #loader .logo {

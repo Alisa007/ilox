@@ -24,7 +24,16 @@ exports.initLocals = function(req, res, next) {
 	
 	locals.navLinks = [
 		{ label: 'About us',    key: 'about',		href: '/about-us' },
-		{ label: 'Services',	key: 'services',	href: '/services' },
+		{ label: 'Services',	
+			key: 'services',	
+			href: '/services',
+			subLinks: [
+				{ label: 'Photography',    	key: 'photography',		href: '/services/photography' },
+				{ label: 'Videography',    	key: 'videography',		href: '/services/videography' },
+				{ label: 'Makeup',    		key: 'makeup',			href: '/services/makeup' },
+				{ label: 'Google Street View', 		key: 'google',	href: '/services/google-street-view' },
+				{ label: 'Studio Rental',  	key: 'rental',			href: '/services/studio-rental' }
+			]},
 		{ label: 'Blog',		key: 'blog',		href: '/blog' },
 		{ label: 'Gallery',		key: 'gallery',		href: '/gallery' },
 		{ label: 'Contact',		key: 'contact',		href: '/contact' }

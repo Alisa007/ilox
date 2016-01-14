@@ -35,5 +35,13 @@
 			#nav.collapse.navbar-toggleable-xs.pull-right
 				ul.nav.navbar-nav
 					each link in navLinks
-						li.nav-item(class=(section == link.key ? 'active' : null))
-							a(href=link.href).nav-link= link.label
+						if link.subLinks
+							li.nav-item(class=(section == link.key ? 'active' : null)).dropdown
+								a(href="#", data-toggle="dropdown").nav-link.dropdown-toggle= link.label
+									ul.dropdown-menu.navmenu-nav
+										each subLink in link.subLinks
+											li.nav-item(class=(section == subLink.key ? 'active' : null))
+												a(href=subLink.href).nav-link= subLink.label
+						else 
+							li.nav-item(class=(section == link.key ? 'active' : null))
+								a(href=link.href).nav-link= link.label

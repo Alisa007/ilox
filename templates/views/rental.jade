@@ -1,0 +1,52 @@
+extends ../layouts/default
+
+block css
+	style.
+		#navbar {
+			background: transparent;
+		}
+
+block js
+	script(src='/js/services.js')
+		
+block content
+	#fullpage
+		.section
+			iframe.google-view(src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2s!4v1434704678200!6m8!1m7!1sJhmvIFOetowAAAQqPybQVg!2m2!1d3.158038!2d101.743947!3f194.4619634181074!4f-6.186320040346345!5f0.7820865974627469")
+			//.container: h1.strike-title(style="margin-top: -50vh;") Studio and equipment rental
+			
+		.section.container
+			.hidden-sm-up 
+				h2.strike-title Location
+			.card-deck
+				.card.card-border.hidden-xs-down
+					h3.card-title.text-primary STUDIO RENTAL
+					.card-block
+						ul.fa-ul.card-text
+							li Wedding Venue
+							li Party or Occasion Venue
+							li Studio Hire for Artists, Photographers, Videographers
+							li Art Space for Casting Calls, Art Gallery Exhibitions, Performance Rehearsals
+							li Film Production
+							li Catering Services
+							li Mixologist Hire Arrangement
+							li Location Scoutings
+				.card
+					iframe.card-img(allowfullscreen
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.758875226412!2d101.7415772146012!3d3.1581479977004534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37ae5569ab35%3A0x9e5521091ceb178!2siLox+Studio!5e0!3m2!1sen!2s!4v1444464268264"
+					style="height: 100% !important; width: 100% !important;")
+
+
+		.section.container
+			.card-deck
+				.card.hidden-xs-down
+					img(src="http://iloxstudio.com/img/iloxstudio_studio.jpg")
+				.card.card-border
+					h3.card-title.text-primary STUDIO LAYOUT
+					.card-block
+						ul.fa-ul.card-text
+							li A two-level bungalow unit of approximately 2,000 sq ft interior space.
+							li The exterior space accummulates to 10,000 sq ft includes an al-fresco side-foyer, a spacious garden with well-cared greeneries and a fenced private swimming pool.
+							li Two sections of living halls.
+							li Kitchen with basic amenities.
+							li Private parking lot which accommodates up to 10 vehicles.

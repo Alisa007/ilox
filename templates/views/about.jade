@@ -1,0 +1,82 @@
+extends ../layouts/default
+
+block js
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js')
+	script.
+		$(document).ready(function () {
+			$("#com").backstretch('http://iloxstudio.com/img/food/sandwich_photo.jpg');
+			$("#noCom").backstretch('http://iloxstudio.com/img/portrait/black_and%20_white_portrait.jpg');
+		});
+
+block content
+	#fullpage
+		.section.container
+			.col-xs-12: h1.strike-title About iLox Studio
+			.row
+				.col-xs-12
+					p.text-justify.
+						The creative team of ILOX Studio consists of a group of dedicated photographers, artists, stylists
+						and event planners with accredited skills. By innovatively engaging with fulfilling all commercial and
+						non-commercial photographic assignments using only the highest quality and branded photographic
+						gears, clients’ satisfaction is the ultimate goal of our company.
+					
+				.col-xs-12.hidden-xs-down: .row
+					.col-xs-7
+						p.text-justify.
+							In its determination to maintain
+							highest standard towards perfection, the artistic team of ILOX Studio is formed by the best
+							available artists within the industry. All team members have gone through strict capability
+							evaluations to ensure flawless cooperation while granting the flexibility to uphold their individual
+							styles and visions in imaging production. We pride ourselves by the wide listing of international and
+							national connections of talents and event organizers accumulated over years of involvement in the
+							relevant industries.
+					.col-xs-5
+						h2.text-xs-center.
+							Are you looking for
+							<a href="services/photography">photographer</a>,
+							<a href="services/videography">videographer</a> or
+							<a href="services/makeup">make up artist</a>?
+						
+				.col-xs-12.hidden-sm-down
+					p.text-justify.
+						Our philosophy is to maintain imaginative, innovative and remain passionate while delivering
+						exceptional imaging end-results adopting our vast experience and untiring creativity gained from
+						numerous involvements in the industry. ILOX Studio, as a one-stop portal providing comprehensive coverage of services, also offers
+						complete lighting solutions, HD monitor, digital equipment, props and sets preparations.
+
+
+		.section.container
+			.card-deck
+				#com.card.hidden-xs-down
+					
+				.card.card-border
+					h2.card-title Commercial services
+					.card-block
+						ul.fa-ul.card-text
+							li Photography and Videography for Advertising purposes of Products
+							li Product and Food Styling
+							li Fashion Styling and photography
+							li Reportage and event coverage, catwalk shows coverage
+							li Photojournalism
+							li Editorial photography
+							li Architectural and Interior Designs
+							li Product and jewellery Photography
+							li Location scouts
+								
+		.section.container
+			.card-deck
+				.card.card-border
+					h2.card-title Non commercial services
+					.card-block
+						ul.fa-ul.card-text
+							li Models Portfolio
+							li Individual Portraits
+							li Graduation Portraits
+							li Boudoir Photography
+							li Wedding Photography and Videography by Top Photographers and Videographers
+							li Makeup and Hair-do by Award-winning Makeup Artists
+							li Imported French Lace Bridal Gowns Rental
+							li Local and Oversea Destination Pre-Wedding Photography
+							li Family Portraits, Maternity and Infant Photoshoots
+								
+				#noCom.card.hidden-xs-down

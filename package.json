@@ -1,0 +1,30 @@
+{
+  "name": "lox",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "keystone": "latest",
+    "async": "latest",
+    "underscore": "latest",
+    "node-sass": "latest",
+    "node-sass-middleware": "latest", 
+    "dotenv": "latest"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-jshint": "latest",
+    "jshint-stylish": "latest",
+    "gulp-shell": "latest",
+    "gulp-watch": "latest",
+    "gulp-sass": "latest"
+    
+  },
+  "engines": {
+    "node": "latest",
+    "npm": "latest"
+  },
+  "scripts": {
+    "start": "node keystone.js"
+  },
+  "main": "keystone.js"
+}

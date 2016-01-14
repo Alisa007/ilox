@@ -1,0 +1,135 @@
+extends ../layouts/default
+
+block css
+	link(href='/styles/index.css', rel="stylesheet")
+	
+block js
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js')
+		script(src='/js/index.js')
+			
+block content
+	#fullpage
+		.section.text-inverse.text-xs-center
+			.cover
+				#cover
+			.container-fluid: .row: .col-xs-12
+					h1 iLox Studio
+						br
+						small Photography &amp; Videography
+					i.lnr.lnr-chevron-down.fa-3x(id="moveDown")
+					
+		.section.container
+			.card-deck
+				.card.card-border
+					h2.card-title
+						a(href="services/photography") Photography
+					.card-block.card-text.text-justify. 
+						ILOX Studio has some of the leading photographers in Malaysia,
+						all selected for their skill and passion along with a proven track record.
+						<a href="services/photography"> Photography services</a>
+						extend to both commercial and non-commercial purposes,
+						conducted on or off site at a location of your choice.
+						Our clients include international
+						<a href=""> fashion magazines</a>,
+						<a href=""> property developers</a>, 
+						restaurants and hotels,
+						along with private clients such as families and couples planning 
+						<a href=""> weddings</a>.
+				.card(style="border: 0;").hidden-sm-down
+					img(src="http://iloxstudio.com/img/product/pink_seat.jpg")
+					
+		.section.container
+			.card-deck
+				.card.embed-responsive.hidden-sm-down
+					iframe.card-img.embed-responsive-item(src="https://www.youtube.com/embed/-0mi2hKbvOU?rel=0"
+					frameborder="0" allowfullscreen)
+			
+				.card.card-border
+					h2.card-title
+						a(href="services/videography") Videography
+					.card-block.text-justify
+						p.card-text.text-justify.
+							ILOX Studio
+							innovative <a href="services/videography">videographers and cinematographers</a> have all been specially trained and selected for their skill and passion.
+							Our videographers and cinematographers are some of the best in their field in South East Asia.
+							We are committed to collaborating with our clients to achieve the best quality productions at an international and professional standard.</p>
+			
+						
+		.section.container
+			.card-deck
+				.card.card-border
+					h2.card-title
+						a(href="services/google-street-view") Google Business View
+					.card-block
+						p.card-text.text-justify.
+							Enhance your presence across Google with a premium quality,
+							<a href="services/google-business-view">360 degree virtual tour</a> powered by
+							Street View technology. Invite customers inside with a virtual tour of your business on Google Search,
+							Google Maps and Google+. Getting
+							<a href="services/google-business-view">business view</a> is easy. Get started by
+							<a href="contact">contacting Ilox Studio</a>, the Google Trusted
+							Agency today. <span class="hidden-md-down">You could enhance the presence of your brands across Google with
+							this latest innovative and interactive
+							feature which will definitely increase the traffic to your website 
+							and other social media portals.</span>
+				.card.embed-responsive.hidden-sm-down
+					iframe.card-img.embed-responsive-item(src="https://www.youtube.com/embed/gFWV1wpv5AQ"
+					frameborder="0" allowfullscreen)
+
+		.section.container
+			.card-deck
+				.card.embed-responsive.hidden-sm-down
+					iframe.card-img-bottom.embed-responsive-item(src="https://www.youtube.com/embed/-z7W5dIvibA?rel=0"
+					frameborder="0" allowfullscreen width="480")
+
+				.card.card-border
+					h2.card-title
+						a(href="services/makeup") Makeup
+					.card-block
+						p.card-text.text-justify.
+							ILOX Studio has professional
+							<a href="services/makeup">makeup and hair services</a>  of an international standard.
+							We carefully select our team of makeup artists based on our high standards of
+							excellence and perfection.
+							We understand that our artists each have their own flare and style and we choose the
+							best professionals working in South East Asia for our clients to collaborate with.
+							<span class="hidden-xs">Our hair and makeup services extend to almost all commercial and non-commercial purposes.</span>
+
+		.section.container
+			.card-deck
+				.card.card-border
+					h2.card-title
+						a(href="services/studio-rental") Studio and equipment rental
+					.card-block
+						p.card-text.text-justify.
+							<a href="services/studio-rental">Ilox studio</a> is a two-level bungalow unit of approximately 2,000 sq ft interior space.
+							The exterior space accummulates to 10,000 sq ft includes an al-fresco side-foyer,
+							a spacious garden with well-cared greeneries and a fenced private swimming pool,
+							two sections of living halls and a kitchen with basic amenities.
+							Private parking lot accommodates up to 10 vehicles.
+				.card.hidden-sm-down
+					img(src="http://iloxstudio.com/img/iloxstudio_studio.jpg")
+						
+//block content
+
+//	.container
+//		.col-xs-12
+//			.card.card-border
+//				h2.card-title iLox Studio
+//				.card-block
+//					p.card-text.text-justify.
+//						dfddfdfdf sdf
+//						sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf
+//						sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf
+//						sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf
+//						sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf
+//						sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf
+//						sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf dfddfdfdf sdf
+//					
+//					//button.btn.btn-secondary-outline(type="button") Login 
+//					//button.btn.btn-primary(type="submit") See gallery
+//
+//
+////.row: .col-xs-12.text-center
+//	//	a(type="button", href='gallery').btn.btn-primary.btn-lg See our work
+//	//	a(type="button", href='keystone/signin').btn.btn-primary-outline.btn-lg Login

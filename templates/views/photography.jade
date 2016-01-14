@@ -1,0 +1,43 @@
+extends ../layouts/default
+		
+block content
+	.container
+		#fullpage
+			//if galleries.length
+				
+			.section.container
+				.col-xs-12: h1.strike-title Photography
+				.row.m-t-1
+					each gallery in galleries
+						.col-xs-3
+							.card.embed-responsive.embed-responsive-16by9
+								img.card-img(src=gallery._.heroImage.limit(680,680), alt=gallery.name style="opacity: 0.2;")
+								.card-img-overlay
+									h2.card-title.text-xs-center= gallery.name
+				
+			.section.container
+				p.text-justify.
+					ILOX Studio has some of the leading photographers in Malaysia, all selected for their skill and passion along with a proven track record.
+					Photography services extend to both commercial and non-commercial purposes, conducted on or off site at a location of your choice.
+					Our clients include international fashion magazines, property developers,
+					restaurants and hotels, along with private clients such as families and couples planning
+					<a href="services/photography">weddings</a>.
+						
+				p.text-justify.
+					Our commercial photography services extend too much more than the images we take- we can go one step further with our clients and work to develop an advertising campaign from start to finish.
+					We can help with product and food styling, photojournalism, editorial, jewelry photography, catwalk show coverage or interior design/ architectural coverage.
+
+
+			.section.container
+				p.text-justify.
+					Non-commercial photography includes portfolios for modeling, individual portraiture- perhaps for pregnancy or to capture a special family moment such as graduation.
+					ILOX Studio also specializes in wedding photography, including pre-wedding/ engagement shoots and full album editing services to capture you special day in the best international quality.
+
+				p.text-justify.
+					Our wedding photography services extend to the delivery of a handmade album packed full of your favorite images from the day.
+					Each image is professionally edited and created in either black and white or color depending on the choice of the bride and groom. Although we have a choice of album options,
+					our signature album choice is handmade in Italy with Hahnemuhle fine art paper.
+				
+				p.text-justify.
+					Each of the images we take is done so with the best equipment available in the industry. Whether you chose to come to our studio or for us to come to a location of your choice,
+					we have complete lighting solutions and portable equipment of professional standard. We also use the best editing tools to create the perfect finishing touches and styling to your images.

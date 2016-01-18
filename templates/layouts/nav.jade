@@ -1,30 +1,3 @@
-//nav(role="navigation").navmenu.navmenu-inverse.navmenu-fixed-left.offcanvas
-//	a(href="/").nav-link.navmenu-brand.text-center ilox studio
-//	ul.nav.navmenu-nav
-//		li.nav-item: a(href="about").nav-link About us
-//		li.nav-item.dropdown: a(href="services", data-toggle="dropdown").nav-link.dropdown-toggle Services
-//			ul.dropdown-menu.navmenu-nav
-//				li.nav-item: a(href="services/photography").nav-link Photography
-//				li.nav-item: a(href="services/videography").nav-link Videography
-//				li.nav-item: a(href="services/makeup").nav-link Makeup
-//				li.nav-item: a(href="services/studio-rental").nav-link Studio rental
-//				li.nav-item: a(href="services/google-street/view").nav-link Google street view
-//				
-//				
-//		each link in navLinks
-//			li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-//			
-//	nav.navmenu-nav.text-center
-//		each social in socials
-//			a(target="_blank"
-//			rel="nofollow"
-//			role="button"
-//			type="button"
-//			href=social.url
-//			itemprop="sameAs"
-//			class="btn-#{ social.network }").btn.btn-sm.btn-social.btn-social-icon.btn-circle
-//				i.fa(class="fa-#{ social.network }")
-
 #navbar.nav.navbar.navbar-dark.navbar-fixed-top
 	.container-fluid: .row
 		.col-xs-12
@@ -37,8 +10,10 @@
 					each link in navLinks
 						if link.subLinks
 							li.nav-item(class=(section == link.key ? 'active' : null)).dropdown
-								a(href="#", data-toggle="dropdown").nav-link.dropdown-toggle= link.label
-									ul.dropdown-menu.navmenu-nav
+								a( 
+								data-toggle="dropdown"
+								role="button" aria-haspopup="true" aria-expanded="false").nav-link.dropdown-toggle= link.label
+									ul.dropdown-menu(style="background: #e43244")
 										each subLink in link.subLinks
 											li.nav-item(class=(section == subLink.key ? 'active' : null))
 												a(href=subLink.href).nav-link= subLink.label

@@ -29,3 +29,10 @@ node_modules
 
 # Ignore .DS_Store files on OS X
 .DS_Store
+
+# Ignore all server folders
+models
+routes
+templates
+updates
+keystone.js

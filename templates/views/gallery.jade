@@ -9,93 +9,16 @@ block js
 	script(src='/js/gallery.js')
 		
 block content
-	//.container
-	//	h1.strike-title Gallery
-	
 	if galleries.length
 		#fullpage
 			each gallery in galleries
-				.section
+				.section(id="#{ gallery.name }")
 					.container
 						h2.strike-title= gallery.name
-					.gallery(style="height: 50vh;").m-t-1
+					.gallery(style="height: 66vh;").m-t-1
 						each image in gallery.images
 							.cell
 								img(src=image.limit(300, 300), alt=image.limit(300, 300))
 	else
-		h3.text-muted There are no image galleries yet.
-
-
-
-//block css
-//	link(href='//blueimp.github.io/Gallery/css/blueimp-gallery.min.css', rel="stylesheet")
-//	link(href='https://blueimp.github.io/Bootstrap-Image-Gallery/css/bootstrap-image-gallery.css', rel="stylesheet")
-//	link(href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/css/bootstrap-select.min.css', rel="stylesheet")
-//	//link(href='/styles/gallery.css', rel="stylesheet")
-		
-		
-
-//block content
-//	h1 Gallery
-//	.col-xs-12
-//		if galleries.length
-//			//select.selectpicker
-//			//	each gallery in galleries
-//			//		option= gallery.name
-//
-//			#links.card-columns
-//				each gallery in galleries
-//					//.card.card-inverse.card-primary.text-center.card-block
-//						h2= gallery.name
-//					
-//					a(href=gallery.heroImage
-//					title=gallery.name
-//					data-gallery).card.card-inverse.embed-responsive.embed-responsive-16by9
-//						img(src=gallery._.heroImage.limit(680,680), alt=gallery.name).card-img
-//						.card-img-overlay
-//							h2.card-title(style="margin-top: 50px;")= gallery.name
-//						
-//					//each image in gallery.images
-//					//	//p= image.url
-//					//	a(href=image.limit(300, 300), title=image.limit(300, 300), data-gallery).card
-//					//		img(src=image.limit(300, 300), alt=image.limit(300, 300)).card-img-top
-//
-//					//if gallery.heroImage.exists
-//					//	.col-sm-4.col-md-4.gallery-image: img(src=gallery._.heroImage.limit(680,680)).img-rounded
-//					//	.col-sm-8.col-md-8: .row
-//					//		each image in gallery.images
-//					//			.col-xs-4.col-sm-4.col-md-3.gallery-image: img(src=image.limit(300,300)).img-rounded
-//					//else
-//					//	each image in gallery.images
-//					//		//.col-xs-6.col-sm-4.col-md-3.gallery-image: img(src=image.limit(300,300)).img-rounded
-//					//		#links
-//					//			a(href="images/banana.jpg", title="Banana", data-gallery).gallery-image
-//					//				img(src=image.limit(300,300), alt="Banana")
-//		else
-//			h3.text-muted There are no image galleries yet.
-//			
-//	#blueimp-gallery(data-use-bootstrap-modal="false").blueimp-gallery
-//		.slides
-//		//h3.title
-//		a.prev ‹
-//		a.next ›
-//		a.close ×
-//		a.play-pause
-//		ol.indicator
-//			
-//		.modal.fade
-//			.modal-dialog.modal-lg
-//				.modal-content
-//					.modal-header
-//						button(type="button", aria-hidden="true").close &times;
-//					.modal-body.next
-//					.modal-footer
-//						button(type="button").btn.btn-default.pull-left.prev
-//							i.glyphicon.glyphicon-chevron-left Previous
-//						button(type="button").btn.btn-primary.next
-//							i.glyphicon.glyphicon-chevron-right Next
-//		
-////block js
-////	script(src='//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js')
-////	script(src='https://blueimp.github.io/Bootstrap-Image-Gallery/js/bootstrap-image-gallery.js')
-////	script(src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/js/bootstrap-select.min.js')
+		.container
+			h3.text-muted There are no image galleries yet.

@@ -27,9 +27,9 @@ $(document).ready(function(){
 	});
 });
 
-
-h1 = $('h1')[0];
-h1.innerHTML = '<span>' + h1.innerHTML + '</span>';
+//
+//h1 = $('h1')[0];
+//h1.innerHTML = '<span>' + h1.innerHTML + '</span>';
 
 cardTitles = $('.card-title');
 for (index = 0; index < cardTitles.length; ++index) {

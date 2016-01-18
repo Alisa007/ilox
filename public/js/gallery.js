@@ -5,15 +5,8 @@
 $(document).ready(function(){
 	$('.gallery').flickity({
 		accessibility: true,
-
 		autoPlay: true,
-		// advances to the next cell
-		// if true, default is 3 seconds
-		// or set time between advances in milliseconds
-		// i.e. `autoPlay: 1000` will advance every 1 second
-
 		cellAlign: 'center',
-
 		cellSelector: undefined,
 		// specify selector for cell elements
 
@@ -40,7 +33,7 @@ $(document).ready(function(){
 
 		percentPosition: true,
 		prevNextButtons: true,
-		pageDots: true,
+		pageDots: false,
 		resize: true,
 		rightToLeft: false,
 
@@ -54,7 +47,9 @@ $(document).ready(function(){
 		// IE8 and Android 2.3 do not support watching :after
 		// set watch: 'fallbackOn' to enable for these browsers
 
-		wrapAround: true
+		wrapAround: true,
 		// at end of cells, wraps-around to first for infinite scrolling
+
+		imagesLoaded: true
 	});
 });

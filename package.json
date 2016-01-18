@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "keystone": "latest",
+    "keystone": "git+https://git@github.com/keystonejs/keystone.git",
     "async": "latest",
     "underscore": "latest",
     "node-sass": "latest",
     "node-sass-middleware": "latest", 
-    "dotenv": "latest"
+    "dotenv": "latest",
+    "cloudinary": "latest"
   },
   "devDependencies": {
     "gulp": "latest",
